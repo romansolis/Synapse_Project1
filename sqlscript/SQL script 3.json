@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 3",
+	"properties": {
+		"content": {
+			"query": "SELECT TOP (100) [PatientID]\n,[Patient_Name]\n,[Gender]\n,[DateofBirth]\n,[Zipcode]\n,[Emp_status]\n,[Education]\n,[Marital_Status]\n,[No_Children]\n,[Ancestry]\n,[Avg_Commute]\n,[Daily_Internet_Use]\n,[Avlbl_Vehicle]\n,[Military_Service]\n,[Disease]\n,[YearofBirth]\n,[AgeofPatient]\n FROM [dbo].[MedicalParquet]",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "rjsMedicalMerge",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
