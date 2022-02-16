@@ -1,0 +1,88 @@
+{
+	"name": "Parquet1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "synapse"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": [
+			{
+				"name": "PatientID",
+				"type": "INT32"
+			},
+			{
+				"name": "Patient_Name",
+				"type": "UTF8"
+			},
+			{
+				"name": "Gender",
+				"type": "UTF8"
+			},
+			{
+				"name": "DateofBirth",
+				"type": "DATE"
+			},
+			{
+				"name": "Zipcode",
+				"type": "INT32"
+			},
+			{
+				"name": "Emp_status",
+				"type": "UTF8"
+			},
+			{
+				"name": "Education",
+				"type": "UTF8"
+			},
+			{
+				"name": "Marital_Status",
+				"type": "UTF8"
+			},
+			{
+				"name": "No_Children",
+				"type": "INT32"
+			},
+			{
+				"name": "Ancestry",
+				"type": "UTF8"
+			},
+			{
+				"name": "Avg_Commute",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "Daily_Internet_Use",
+				"type": "DOUBLE"
+			},
+			{
+				"name": "Avlbl_Vehicle",
+				"type": "INT32"
+			},
+			{
+				"name": "Military_Service",
+				"type": "UTF8"
+			},
+			{
+				"name": "Disease",
+				"type": "UTF8"
+			},
+			{
+				"name": "YearofBirth",
+				"type": "INT32"
+			},
+			{
+				"name": "AgeofPatient",
+				"type": "INT32"
+			}
+		]
+	}
+}
