@@ -1,0 +1,52 @@
+{
+	"name": "SourceDataset_d06",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureBlobStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Dataset A.csv",
+				"container": "capstone4roman"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Employee_Name",
+				"type": "String"
+			},
+			{
+				"name": "Gender",
+				"type": "String"
+			},
+			{
+				"name": "DateofBirth",
+				"type": "String"
+			},
+			{
+				"name": "Zipcode",
+				"type": "String"
+			},
+			{
+				"name": "Emp_Status",
+				"type": "String"
+			},
+			{
+				"name": "Education",
+				"type": "String"
+			},
+			{
+				"name": "PatientID",
+				"type": "String"
+			}
+		]
+	}
+}
