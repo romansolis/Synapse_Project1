@@ -1,0 +1,19 @@
+{
+	"name": "DestinationDataset_d06",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "admind2d2-WorkspaceDefaultStorage",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Parquet",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileSystem": "synapse"
+			},
+			"compressionCodec": "snappy"
+		},
+		"schema": []
+	}
+}
