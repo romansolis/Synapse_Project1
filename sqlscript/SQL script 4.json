@@ -1,0 +1,17 @@
+{
+	"name": "SQL script 4",
+	"properties": {
+		"content": {
+			"query": "{\n    \"name\": \"ParquetDataset1\",\n    \"properties\": {\n        \"type\": \"Parquet\",\n        \"linkedServiceName\": {\n            \"referenceName\": \"<AzureDataLakeStorage1>\",\n            \"type\": \"LinkedServiceReference\"\n        },\n        \"schema\": [ < physical schema, optional, retrievable during authoring > ],\n        \"typeProperties\": {\n            \"location\": {\n                \"type\": \"storaged2d2\",\n                \"container\": \"capstone4roman\",\n                \"folderPath\": \"folder/subfolder\",\n            },\n            \"compressionCodec\": \"snappy\"\n        }\n    }\n}",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "master",
+				"poolName": "Built-in"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
